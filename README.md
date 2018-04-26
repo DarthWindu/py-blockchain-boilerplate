@@ -11,6 +11,7 @@ A simple template to host local blockchains
 
  - Mines new block and returns new block
  - Success Response code: `200`
+ 
 Response Structure: 
 ```python
 response = {
@@ -32,6 +33,7 @@ response = {
 
  - Returns chain as JSON
  - Success Response Code: `200`
+ 
 Response Structure:
 ```python
 response = {
@@ -47,6 +49,7 @@ response = {
  - Resolves conflicts among nodes and determines which chain is authoritative
  - Returns authoritative chain and message to indicate whether the node's chain was replaced
  - Success Code: `200`
+ 
 Response Structure:
 ```python
 response = {
@@ -71,6 +74,7 @@ required = ['sender', 'recipient', 'amount']
 Error Code: `400`
 
 Returns message indicating which block TX will be added to (success code `201`).
+
 Response Structure: 
 ```python
 response = {
